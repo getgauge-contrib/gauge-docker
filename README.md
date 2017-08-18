@@ -2,44 +2,24 @@
 
 Docker images with Gauge installed.
 
-## Platforms
+## Java
 
-### Linux
+- [Linux](java/linux)
+- [Windows]
 
-Linux images are centos based. 
+## C#
 
-- [gauge-openjdk8-centos](link_tbd) 
-  - Gauge (latest)
-  - JDK - OpenJDK 8
-  - Centos 7
-  - Gauge-java plugin
+- [Linux](csharp/linux)
+- [Windows]
 
-- [gauge-ruby23-centos](link_tbd) 
-  - Gauge (latest)
-  - Ruby 2.3
-  - Centos 7
-  - Gauge-ruby plugin
+## Ruby
 
-- [gauge-mono-centos](link_tbd) 
-  - Gauge (latest)
-  - Mono 4.8 (gauge-csharp does not support mono 5.x yet)
-  - Centos 7
-  - Gauge-csharp plugin
+- [Linux](ruby/linux)
+- [Windows]
 
+## Reporting Issues
 
-### Windows
-
-TODO
-
-## Usage
-
-All images have the working directory set to `/gauge`. So ideally you should be able to clone your project in your host and run
-
-```
-docker run -it -v `pwd`:/gauge getgauge/<image_name> <gauge_command*>
-```
-
-<sup>*</sup> gauge command is specific to the project. Ex. maven projects require `mvn test-compile gauge:execute`.
+Comments on hub.docker.com are not actively monitored. Please report issues [here](https://github.com/getgauge-contrib/gauge-docker/issues/new).
 
 ## License
 
