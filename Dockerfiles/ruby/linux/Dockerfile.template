@@ -1,0 +1,16 @@
+# Copyright (c) ThoughtWorks Inc. All rights reserved.
+# Licensed under the MIT license. See LICENSE file in the project root for details.
+
+FROM centos/ruby-23-centos7
+
+LABEL io.getgauge.version={{.GaugeVersion}} \
+      io.getgauge.plugin.version={{.PluginVersion}} \
+      maintainer="Srikanth V<https://github.com/sriv>"
+
+COPY tmp/gauge /usr/local/bin
+
+WORKDIR /gauge
+
+RUN \
+  gauge install ruby && \
+  rm -rf /tmp/gauge /tmp/gauge.zip ~/.gauge/config ~/.gauge/logs
