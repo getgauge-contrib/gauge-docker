@@ -6,7 +6,8 @@ Docker images with Gauge installed.
 
 ### Linux
 
-Gauge docker hub can be found [here](https://hub.docker.com/r/getgauge/)
+Gauge docker hub can be found [here](https://hub.docker.com/r/getgauge/).
+
 Linux images are centos based. 
 
 - [gauge-openjdk8-centos](https://hub.docker.com/r/getgauge/gauge-jdk8-centos7/) 
