@@ -1,3 +1,5 @@
+# IMPORTANT: This repository is depricated.
+
 # Gauge Docker
 
 Docker images with Gauge installed.
